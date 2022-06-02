@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  bot:
+    image: ghcr.io/lunarmint/reservore-bot/reservore-bot:latest
+    restart: unless-stopped
+    volumes:
+        - ${CONFIG}:/app/config.yml
+        - ${LOGS_FOLDER}:/app/logs/
+    environment:
+        - BOT_TOKEN=${BOT_TOKEN}
+        - PYTHONPATH=/app
