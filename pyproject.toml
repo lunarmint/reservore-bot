@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "reservore-bot"
+version = "1.0.0"
+description = ""
+authors = ["Mint <developer@chocomint.dev>"]
+maintainers = ["Mint <developer@chocomint.dev>"]
+license = "Unlicense"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+coloredlogs = "15.0.1"
+pyaml-env = "1.1.5"
+python = "^3.10"
+py-cord = "2.0.0rc1"
+aiodns = { version = "3.0.0", optional = true }
+Brotlipy = { version = "0.7.0", optional = true }
+cchardet = { version = "2.1.7", optional = true }
+orjson = { version = "3.6.8", optional = true }
+
+[tool.poetry.extras]
+orjson = ["orjson"]
+aiodns = ["aiodns"]
+Brotlipy = ["Brotlipy"]
+cchardet = ["cchardet"]
+
+[tool.poetry.dev-dependencies]
+black = ">=22.3.0"
+flake8 = "^4.0.1"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

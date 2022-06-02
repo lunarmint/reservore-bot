@@ -1,0 +1,24 @@
+guild_ids: [000000000000000000]
+bot:
+  token: !ENV ${BOT_TOKEN}
+  prefix: ">"
+  status: ""
+  log_level: "DEBUG"
+  intents:
+    messages: True
+    message_content: True
+    guilds: True
+    members: True
+    bans: True
+    reactions: True
+  case_insensitive: True
+  sync_commands: True
+  sync_on_cog_reload: True
+roles:
+  boh: 000000000000000000
+  foh: 000000000000000000
+channels:
+  roles: 000000000000000000
+  general: 000000000000000000
+embeds:
+  role_selector: 000000000000000000
