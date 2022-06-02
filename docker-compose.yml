@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   bot:
-    image: ghcr.io/lunarmint/reservore-bot/reservore-bot:latest
+    image: ghcr.io/lunarmint/reservore-bot/reservore-bot:main
+    container_name: reservore-bot
     restart: unless-stopped
     volumes:
         - ${CONFIG}:/app/config.yml
