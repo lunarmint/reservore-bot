@@ -17,11 +17,11 @@ class RoleSelector(commands.Cog):
     async def role_selector(self, ctx: commands.Context):
         role_assignment_text = f"""
         You can react to one of the emotes below to assign yourself a positional role.
-        🔍  <@&{config["roles"]["foh"]}> - Front of House
+        ✨  <@&{config["roles"]["foh"]}> - Front of House
         🍖  <@&{config["roles"]["boh"]}> - Back of House
         """
         roles = {
-            "🔍": config["roles"]["foh"],
+            "✨": config["roles"]["foh"],
             "🍖": config["roles"]["boh"],
         }
 

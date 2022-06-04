@@ -26,7 +26,7 @@ class RoleSelectorListener(commands.Cog):
         foh = discord.utils.get(guild.roles, id=config["roles"]["foh"])
         boh = discord.utils.get(guild.roles, id=config["roles"]["boh"])
         roles = {
-            "🔍": foh,
+            "✨": foh,
             "🍖": boh,
         }
 
